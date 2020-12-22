@@ -1,0 +1,20 @@
+-script
+fn:amc
+--action
+hardlink
+-extract
+-non-strict
+--conflict
+skip
+--log-file
+/data/Media/FileBot/amc_docker.log
+--output
+/data/Media
+--def
+excludeList=/data/Media/FileBot/amc_docker.txt
+movieFormat={plex.derive{" - $vf $source"}}
+seriesFormat={plex.derive{" - $vf $source"}}
+subtitles=en,es,fr
+storeReport=/data/Media/FileBot/reports
+plex=<PLEX SERVER IP>:<PLEX API KEY>
+pushover=<YOOUR PUSHOVER KEY>
