@@ -25,8 +25,11 @@ Follow the docker-run instructions from [binhex/arch-delugevpn](https://github.c
 	    -e OPENSUB_PASS=<YOUR OPENSUB PASSWORD> ^
 	    -e PUSHOVER_USERKEY=<YOUR PUSHOVER USERKEY> ^
 	    -e PUSHOVER_APPKEY=<YOUR PUSHOVER APPLICATION KEY> ^
-		akkaish/arch-delugevpn
+		-e STORAGE_DIR=<Root Storage DIR>
+        -e FILEBOT_CONF_DIR=<Where to store filebot configuations>
+        akkaish/arch-delugevpn
+
 
 Also:
-- Store your filebot liscense in /config/filebot/license.psm
+- Store your filebot liscense in FILEBOT_CONF_DIR/license.psm
 - and store your filebot AMC arguments in : /config/filebot/FileBotArgs.txt , see my example [here](FileBotArgs.txt)

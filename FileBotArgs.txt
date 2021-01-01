@@ -5,16 +5,16 @@ hardlink
 -extract
 -non-strict
 --conflict
-skip
+auto
 --log-file
-/data/Media/FileBot/amc_docker.log
+/storage/Media/FileBot/amc_docker.log
 --output
-/data/Media
+/storage/Media
 --def
-excludeList=/data/Media/FileBot/amc_docker.txt
-movieFormat={plex.derive{" - $vf $source"}}
-seriesFormat={plex.derive{" - $vf $source"}}
+excludeList=/storage/Media/FileBot/amc_docker.txt
+movieFormat={plex}
+seriesFormat={plex}
 subtitles=en,es,fr
-storeReport=/data/Media/FileBot/reports
+storeReport=/storage/Media/FileBot/reports
 plex=<PLEX SERVER IP>:<PLEX API KEY>
-pushover=<YOOUR PUSHOVER KEY>
+pushover=<YOUR PUSHOVER KEY>

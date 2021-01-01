@@ -44,10 +44,10 @@ if {$force_conservative} {
 #Get user and pass from args
 set USER [lindex $argv 0]
 set PASS [lindex $argv 1]
-
+set FILEBOT_CONF_DIR [lindex $argv 2]
 
 set timeout -1
-spawn filebot -script fn:configure
+spawn docker run --rm -it -v $FILEBOT_CONF_DIR:/data rednoah/filebot -script fn:configure
 match_max 100000
 expect "Enter OpenSubtitles username: "
 send -- "$USER\r"
