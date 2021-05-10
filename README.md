@@ -28,6 +28,7 @@ Follow the docker-run instructions from [binhex/arch-delugevpn](https://github.c
 		-e STORAGE_DIR=<Root Storage DIR>
         -e FILEBOT_CONF_DIR=<Where to store filebot configuations>
         akkaish/arch-delugevpn
+ALSO: link docker socket... put into docs
 
 
 Also:
